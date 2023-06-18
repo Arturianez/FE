@@ -1,0 +1,11 @@
+p {
+    padding: 21px;
+    margin: 10px;
+    background-color: #34495e;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.image_container img {
+    max-width: 350px;
+}
