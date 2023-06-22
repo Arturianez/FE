@@ -2,32 +2,24 @@
     padding: 0px;
     margin: 0px;
 }
-h2 {
-    margin-left: 20px;
-    padding-top: 20px;
-}
-.table1 {
-    padding-top: 10px;
-    padding-left: 60px;
-    list-style-type: disc;
-}
 
-.table2 {
-    border: 1px solid black;
-    margin: 20px;
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
 img {
-    max-width: 85px;
-    padding: 1px;
+    max-width: 450px;
 }
 
-th { 
-     padding: 10px; 
-     border: 1px solid black; 
-} 
-
-td {
+h3 {
     text-align: center;
-    border: 1px solid black; 
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background: orange;
 }
