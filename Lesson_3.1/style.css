@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+h2 {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.table1 {
+    padding-top: 10px;
+    padding-left: 60px;
+    list-style-type: disc;
+}
+
+.table2 {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+img {
+    max-width: 85px;
+    padding: 1px;
+}
+
+th { 
+     padding: 10px; 
+     border: 1px solid black; 
+} 
+
+td {
+    text-align: center;
+    border: 1px solid black; 
+}
