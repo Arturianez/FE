@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+h3 {
+    padding-left: 50%;
+    font-size: 3em;
+}
+
+.item {
+    text-align: center;
+    /* margin: 0 auto; */
+    width: 1200px;
+    font-size: 2em;
+    margin: 20px; 
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+}
