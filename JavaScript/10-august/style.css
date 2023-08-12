@@ -1,0 +1,63 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.button {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+.item {
+    background: red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.change {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.item2 {
+    background-color: magenta;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.change2 {
+    background-color: navy;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.item3 {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.change3 {
+    border: 2px solid black;
+    margin: 10px;
+    width: 170px;
+    height: 170px;
+}
+.pColor {
+    margin: 10px;
+    background-color: blue;
+}
+
+.pColor1 {
+    margin: 10px;
+    background-color: blue;
+}
+.pColor2 {
+    margin: 10px;
+    background-color: green;
+}
