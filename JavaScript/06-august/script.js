@@ -8,9 +8,10 @@
 // const imgContainer = document.querySelector('#imgContainer')
 // createImg.addEventListener('click',function(){
 //     const image = document.createElement('img')
-//     image.src = '../img/img1.jpg'
+//     image.src = './img/img1.jpg'
 //     imgContainer.append(image)
 // })
+// setAttribute' - можно через него
 
 
 // 2. Создать кнопку и пустой div. При клике на кнопку создавать внутри 
