@@ -52,7 +52,7 @@
 const paragraph = document.querySelector('.paragraph')
 const emptyDiv = document.querySelector('.emptyDiv')
 const lines = ["Paragraph 1", "Paragraph 2", "Paragraph 3"]
-const images = ['..img/img1.jpg', '..img/img2.jpg', '..img/img3.jpg']
+const images = ['./img/img1.jpg', './img/img2.jpg', './img/img3.jpg']
 
 
 function createParagraphs() {
@@ -80,7 +80,7 @@ emptyDiv.addEventListener("click", function(event) { // event указание �
 
 function showImages() {
     const imageContainer = document.querySelector('#small-image-container')
-    images.forEach((imageName) => {
+    images.forEach(function(imageName){
         const imageElement = document.createElement('img');
         imageElement.src = imageName;
         imageElement.classList.add('image');
@@ -93,22 +93,40 @@ function showImages() {
     //     imageContainer.append(img)
     // } // я почти час потратил на поиск почему нет вывода картинок, а только окантовка их, вариантов нет, сдаюсь
 }
-paragraph.addEventListener('click',showImages)
+paragraph.addEventListener('click',showImages) 
+
+
 
 // 4ый блок. При нажатии на одну из картинок забирается ссылка на эту картинку и 
 // в нижней части интерфейса отображается в большем размере. 
 // Так, пользователь нажимая на маленькие картинки видит 
 // их отображение в большем размере.
 
-// может надо через event, но после 4 часов уже голова в теме которую итак не знаешь не варит
-const bigImage = document.querySelector('#big-image-container')
-const imagesAll = document.getElementsByClassName('image');
-for (i=0; i < images.length; i++) {
-    imagesAll[i].addEventListener('click', function(){
-        const imageUrl = this.src
-        bigImage.src = imageUrl
+const img_item = document.querySelectorAll('.img_item');
+const changeImage = document.getElementById('changeImage');
+const showImgContainer = document.querySelector('.showImg');
+
+for (let i = 0; i < img_item.length; i ++) {
+    img_item[i].addEventListener('click', function(){
+        const newSrc = img_item[i].getAttribute('src')
+        changeImage.setAttribute('src', newSrc)
+        showImgContainer.style.display = 'block';
     })
 }
+
+showImgContainer.addEventListener('click', function() {
+    showImgContainer.style.display = 'none';
+});
+
+
+
+// img_item.forEach(img_item => {
+//   img_item.addEventListener('click', function() {
+//         const imageSrc = img_item.getAttribute('src');
+//         changeImage.setAttribute('src', imageSrc);
+//         showImgContainer.style.display = 'block';
+//     });
+// });
 
 
   

@@ -61,3 +61,23 @@
     margin: 10px;
     background-color: green;
 }
+
+.items {
+    margin: 10px;
+}
+.buttons {
+    margin: 20px;
+}
+.second {
+    margin: 10px;
+}
+
+.first {
+    cursor: pointer;
+}
+.second {
+    cursor: pointer;
+}
+.third {
+    cursor: pointer;
+}

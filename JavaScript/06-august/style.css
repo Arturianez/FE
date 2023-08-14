@@ -9,5 +9,15 @@ img {
   flex-wrap: wrap;
 }
 
+.img_item {
+  width: 350px;
+}
 
+.showImg {
+  display: none;
+}
 
+#changeImage {
+  width: 500px;
+  height: 500px;
+}
