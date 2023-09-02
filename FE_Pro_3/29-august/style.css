@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-top: 192px;
+}
+
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #404149;
+    font-family: Oswald;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    font-family: Open Sans;
+    font-style: normal;
+    line-height: normal;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.about {
+    background: url('./img/bridge.png') no-repeat center center;
+    /* no-repeat - чтобы не дублировалась(без повторов)
+    center center - оси x and y, данные пример центрирует */
+    /* contain - исходный размер картинки ставится в допустимые рамки */
+}
+.about__subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 25px 0 15px 0;
+}
+.about__list {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 57px;
+
+}
+.about__list-item div:first-child {
+    color: var(--accent, #F7654A);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.about__list-item div:nth-child(2) {
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about__list-item div:nth-child(3) {
+    color: var(--gray, #999);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.projects {
+    margin-top: 200px;
+}
+.projects__list {
+    margin-top: 60px;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.project__vector {
+    width: 55px;
+    height: 6px;
+    background: var(--accent, #F7654A);
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.button {
+    background: var(--accent, #F7654A);
+    height: 250px;
+    margin-top: 200px;
+}
+h4 {
+    width: 537px;
+    height: 57px;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    padding-top: 30px;
+}
+.about__request {
+   display: flex;
+   justify-content: space-between; 
+}
+.about__projects {
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    width: 562px;
+    height: 29px;
+    margin-top: 107px;
+    margin-bottom: 45px;
+}
+.request {
+    width: 175px;
+    height: 49px;
+    background: #FFF;
+    color: #000;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    border: none;
+    margin-top: 73px;
+    margin-bottom: 59px;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #404149;
+    text-align: center;
+    font-family: Oswald;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 150px;
+    margin-bottom: 66px;
+}
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+.services__list-item {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: #F7F7F7;
+}
+.services__list-item div {
+  max-width: 172px;  
+  text-align: center;
+  padding-top: 30px;
+}
+.services__list_2 {
+    display: grid;
+    grid-template-columns: 6;
+    gap: 30px;
+}
+.services__list-item:nth-child(4) {
+    grid-row: 2;
+    grid-column: span 1;
+    margin-top: 5px;
+}
+.services__list-item:nth-child(5) {
+    grid-row: 2;
+    grid-column: span 1;
+    margin-top: 5px;
+}
+.services__list-item:nth-child(6) {
+    grid-row: 2;
+    grid-column: span 1;
+    margin-top: 5px;
+}
+h5 {
+    color: #000;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 112px;
+    margin-bottom: 60px;
+}
+.contact_info_items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.information {
+    color: var(--gray, #999);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 36px;
+}
+.info_about {
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 25px;
+    width: 255px;
+}
+.info_items:nth-child(4) .info_about {
+    color: var(--Accent, #F7654A);
+}
+/* ПОМЕТКА №1 */
+.info_items:nth-child(3) img { 
+    margin-top: 5px;
+}
+/* ПОМЕПТКА №2 */
+.info_items:nth-child(4) img { 
+    margin-top: 12px;
+}
+.end {
+    background: var(--Dark, #404149);
+    margin-top: 60px;
+}
+.finish {
+    display: flex;
+    justify-content: space-between;
+    height: 82px;
+    text-align: center;
+}
+.text {
+    color: var(--White, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 30px 0 30px 0;
+}
+
+
