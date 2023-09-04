@@ -1,0 +1,267 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.testDiv {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 30px 0 0 50px;
+    padding: 25px 25px 25px 25px;
+}
+.testDiv2 {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    margin: 20px 0 0 50px;
+    text-align: center;
+    padding-top: 30px;
+    border: 7px solid green;
+    border-radius: 10px;
+}
+.testDiv3 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+p {
+    padding-left: 45px;
+    padding-top: 10px;
+}
+img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.testDiv4 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.item:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+}
+.item:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin: 30px 0 0 30px;
+}
+.item:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin: 30px 0 0 30px;
+}
+.testDiv5 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.testDiv6 {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    margin-top: 30px;
+    margin-left: 30px; 
+}
+.testSquare {
+    padding-top: 15px;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 6fr);
+}
+.whiteSquare {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+}
+.whiteSquare:nth-child(4) {
+    display: grid;
+    grid-row: 2;
+}
+.whiteSquare:nth-child(5) {
+    display: grid;
+    grid-row: 2;
+}
+.whiteSquare:nth-child(6) {
+    display: grid;
+    grid-row: 3;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.leftPart {
+    width: 150px;
+    height: 150px;
+    margin: 50px 50px;
+    padding-top: 20px;
+    background-color: bisque;
+}
+.parts2 {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+.rightPart {
+    margin-right: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.parts2:nth-child(1) {
+    display: grid;
+    grid-row: 1;
+}
+.parts2:nth-child(2) {
+    display: grid;
+    grid-row: 2;
+}
+.parts2:nth-child(3) {
+    display: grid;
+    grid-row: 2;
+}
+.parts2:nth-child(4) {
+    display: grid;
+    grid-row: 3;
+}
+.parts2:nth-child(5) {
+    display: grid;
+    grid-row: 3;
+}
+.parts2:nth-child(6) {
+    display: grid;
+    grid-row: 3;
+}
+.parts2:nth-child(7) {
+    display: grid;
+    grid-row: 4;
+}
+.parts2:nth-child(8) {
+    display: grid;
+    grid-row: 4;
+}
+.parts2:nth-child(9) {
+    display: grid;
+    grid-row: 4;
+}
+.parts2:nth-child(10) {
+    display: grid;
+    grid-row: 4;
+}
+.testDiv8 {
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    background-color: navy;
+    margin: 30px 0 0 30px;
+}
+@media screen and (max-width: 200px) {
+    .testDiv8 {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 401px) {
+    .testDiv8 {
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+    }
+}
+.testDiv9 {
+    margin: 30px 0 0 30px;
+    width: 250px;
+    height: 250px;
+    background-color: grey;
+    text-align: center;
+}
+.testDiv9:hover {
+    background-color: navy;
+}
+.testDiv9:active {
+    width: 150px;
+    height: 150px;
+}
+.testDiv9:hover::before {
+    content: "There is a text: before";
+    color: yellow;
+}
+.testDiv9:active::after {
+    content: "END!";
+    color: red;
+}
+.testDiv10 {
+    margin: 30px 0 0 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.infoTest10 {
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+}
+.testDiv10 p {
+    padding: 20px 0 20px 0;
+    color: white;
+}
+.button {
+    background-color: azure;
+    border: none;
+    height: 30px;
+    width: 120px;
+    font-family: 'Roboto';
+    font-size: 17px;
+}.button:hover {
+    background-color: yellow;
+}
+.infoID {
+    max-width: 700px;
+    max-height: 400px;
+    background-color: antiquewhite;
+    margin-right: 350px;
+}
+h2 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    max-width: 220px;
+    max-height: 220px;
+    margin-top: -5px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.infoWanted {
+    margin: 25px 30px 0 0;
+    font-size: 18px;
+}
