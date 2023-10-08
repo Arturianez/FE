@@ -120,7 +120,7 @@ async function getPost(postId) {
     const response = await fetch(url, {
         method: 'DELETE',
         headers: {
-
+          
         },
         body: null
     })
