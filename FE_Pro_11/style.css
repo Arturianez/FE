@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(248, 237, 37);
+    
+    .container {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+    
+    .userList {
+        gap: 10px;
+        list-style: none;
+        /* // почему то не получалось сделать цвет magenta*/
+        li {
+            background-color: magenta;
+        }
+    }
+}
+.button {
+    margin: 30px 0 0 30px;
+    width: 50px;
+    height: 40px;
+    background-color: aqua;
+}
