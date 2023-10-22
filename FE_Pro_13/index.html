@@ -7,7 +7,17 @@
     <title>Date: 19.10.2023</title>
 </head>
 <body>
-    
+    <!-- // // Создайте HTML-форму, в которой пользователь может указать название товара и его цену. 
+// Также добавьте кнопку "Добавить в корзину". -->
+    <form id="BuyProduct">
+        <label for="productName">Название товара: </label>
+        <input type="text" id="productName" required>
+        <label for="productPrice">Цена:</label>
+        <input type="number" id="productPrice" required>
+        <button type="submit", class="button-submit"> Добавить в корзину</button>
+    </form>
+    <ul class="productList"></ul>
+
     <script src="./script.js"></script>
 </body>
 </html>
