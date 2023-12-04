@@ -3,7 +3,7 @@ import CustomButton from "./UI/CustomButton";
 import Input from "./UI/Input";
 import App from "../App";
 
-function Form() {
+function Form({onClose}) {
   const [firstWord, setFirstWord] = useState("");
   const [secondWord, setSecondWord] = useState("");
   const [closeForm, setCloseForm] = useState(false);
@@ -17,6 +17,7 @@ function Form() {
   
   const handleClose = () => {
     setCloseForm(true);
+    onClose(false)
   };
   if (closeForm) {
     return null;

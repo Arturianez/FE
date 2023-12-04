@@ -13,7 +13,6 @@ const [isClicked, setIsClicked] = useState(false)
     onHandleClick={()=> setIsClicked(!isClicked)}
     />
     {isClicked && <Form onClose={setIsClicked} />}
-    {/* {isClicked && <Form/>} */}
     </>
   )
 }
