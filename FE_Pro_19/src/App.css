@@ -1,0 +1,13 @@
+.btn {
+    margin: 10px 10px;
+    background-color: navy;
+    color: white;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+}
+.modal {
+    background-color: rgb(200, 194, 194);
+    height: 100%;
+    width: 100%;
+}

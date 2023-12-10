@@ -3,10 +3,9 @@ import CustomButton from "./UI/CustomButton";
 import Input from "./UI/Input";
 import App from "../App";
 
-function Form({onClose}) {
+function Form({onHandleClose}) {
   const [firstWord, setFirstWord] = useState("");
   const [secondWord, setSecondWord] = useState("");
-  const [closeForm, setCloseForm] = useState(false);
 
   function FinalResult() {
     console.log("Access granted. Your object: ", {
@@ -14,14 +13,7 @@ function Form({onClose}) {
       secondWord: secondWord,
     });
   }
-  
-  const handleClose = () => {
-    setCloseForm(true);
-    onClose(false)
-  };
-  if (closeForm) {
-    return null;
-  }
+
 
   return (
     <>
@@ -41,7 +33,7 @@ function Form({onClose}) {
           <CustomButton text="Push the button" onHandleClick={FinalResult} />
           <CustomButton
             text="Close the form"
-            onHandleClick={() => {handleClose()}}
+            onHandleClick={onHandleClose}
             />
         </div>
       </div>
