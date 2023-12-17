@@ -1,6 +1,6 @@
-function CustomButtom({text,size, onHandleClick}) {
+function CustomButtom({text,size,onHandleClick}) {
     return (
-       <div className={`btn ${size}`} onClick={onHandleClick}>{text}</div>
+       <button className={`btn ${size}`} onClick={onHandleClick}>{text}</button>
     )
 }
 export default CustomButtom

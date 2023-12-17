@@ -2,17 +2,30 @@ import { useState } from 'react'
 import './App.css'
 import CustomButtom from './Components/UI/CustomButtom'
 import Modal from './Components/Modal'
+import NewComponent from './Components/NewComponent'
+import Posts from './Components/Posts'
+
 
 function App() {
 const [isClicked, setIsClicked] = useState(false)
 
+const onHandleOpen = () => {
+  setIsClicked(!isClicked)
+}
+const onHandleClose = () => {
+  setIsClicked(!isClicked)
+}
+
   return (
     <>
+    {/* <NewComponent/> */}
+    
       <CustomButtom
       text="Create a comment"
-      onHandleClick={() => setIsClicked(!isClicked)}
+      onHandleClick={onHandleOpen}
       />
-      {isClicked && <Modal onClose={setIsClicked}/>}
+      {/* <Posts/> */}
+      {isClicked && <Modal onHandleClose={onHandleClose}/>}
     </>
   )
 }

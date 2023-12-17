@@ -1,25 +1,44 @@
 import CustomButtom from "./UI/CustomButtom"
 import CustomInput from "./UI/CustomInput"
 import "../App.css"
+import { useState } from "react";
 
-function Modal({onClose}) {
-const [closeModal, setCloseModal] = useState(false)
+function Modal({onHandleClose}) {
+const [firstWord, setFirstWord] = useState("");
+const [secondWord, setSecondWord] = useState("");
+const [author, setAuthor] = useState("")
 
-// const HandleClose = () => {
-//     setCloseModal(true);
-//     onClose(false)
-// };
-// if(closeModal) {
-//     return null;
-// }
+function onHandleCreateComment() {
+    console.log("My comment: ", {firstWord: firstWord, secondWord: secondWord, author: author});
+}
     return (
         <div className="modal">
             <div className="modal_container">
-                text
-                <CustomInput/>
-                <CustomInput/>
-                <CustomInput/>
-                <CustomButtom/>
+                <CustomInput
+                value={firstWord}
+                placeHolder="Title"
+                onHandleChange={(e) => setFirstWord(e.target.value)}
+                />
+                <CustomInput
+                value={secondWord}
+                placeHolder="Description"
+                onHandleChange={(e) => setSecondWord(e.target.value)}
+                />
+                <CustomInput
+                value={author}
+                placeHolder="Author"
+                onHandleChange={(e) => setAuthor(e.target.value)}
+                />
+                <CustomButtom
+                text="Create"
+                size="btn_modal"
+                onHandleClick={onHandleCreateComment}
+                />
+                <CustomButtom
+                text="Close modal"
+                size="btn_modal"
+                onHandleClick={onHandleClose}
+                />
             </div>
         </div>
     )

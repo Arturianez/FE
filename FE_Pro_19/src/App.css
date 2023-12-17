@@ -1,13 +1,33 @@
 .btn {
-    margin: 10px 10px;
+    margin: 5px 5px;
     background-color: navy;
     color: white;
     width: 150px;
     border: 2px solid black;
-    text-align: center;
+}
+.btn_modal {
+    background-color: navy;
+    color: rgb(47, 192, 14);
+    width: 130px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .modal {
     background-color: rgb(200, 194, 194);
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+}
+.modal_container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    align-items: center;
 }
