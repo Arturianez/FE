@@ -19,7 +19,7 @@ useEffect(() => {
         <div className="container_comments">
             <div className="comment">
                 {comments && comments.map((item) => 
-                <div>
+                <div className="item_comment">
                     <strong>{item.email}</strong>
                     <h2>{item.name}</h2>
                     <p>{item.body}</p>
